@@ -25,8 +25,7 @@
     "SuncorpLoginPage": {
         "customerIDInput": "input[id='UserId']",
         "passwordInput": "input[id='password']",
-        "loginButton": "button[id='login-button']",
-        "errorMessage": "text[p='error']"
+        "loginButton": "button[id='login-button']"
     }
     
 }
