@@ -17,10 +17,6 @@ export default class SuncorpLoginPage {
 
     async clickLoginButon() {
         await this.page.click(selectors.SuncorpLoginPage.loginButton);
-    }
-
-    get getErrorMessage() {
-        return this.page.locator(selectors.SuncorpLoginPage.errorMessage).textContent();
-    }
+    }    
 
 }
