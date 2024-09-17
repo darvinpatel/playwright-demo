@@ -11,7 +11,7 @@ test.describe("Login Feature @suncorplogin", async () => {
         await page.goto(`${baseURL}`);
     })
 
-    test("Negative: user tries to login with incorrect credentials.", async ({ page }) => {
+    test.skip("Negative: user tries to login with incorrect credentials.", async ({ page }) => {
 
         await suncorploginPage.enterCustomerID(users.suncorp.username);
         await suncorploginPage.enterPassword(users.suncorp.password);

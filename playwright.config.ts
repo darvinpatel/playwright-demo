@@ -4,8 +4,8 @@ const config: PlaywrightTestConfig = {
     
     //testMatch: ["test/"],
     use: {
-        baseURL: "https://internetbanking.suncorpbank.com.au/",
-        // baseURL: "https://www.saucedemo.com/",
+        // baseURL: "https://internetbanking.suncorpbank.com.au/",
+        baseURL: "https://www.saucedemo.com/",
         headless: true,
         screenshot: "on",
         video: "on",
@@ -19,7 +19,28 @@ const config: PlaywrightTestConfig = {
         outputFile: "jsonReports/jsonReport.json"
     }], ["html", {
         open: "never"
-    }]]
+    }]],
+    projects: [
+        {
+            name: 'chromium',
+            use: {
+                browserName: 'chromium',
+            },
+        },
+        {
+            name: 'firefox',
+            use: {
+                browserName: 'firefox',
+            },
+        },
+        {
+            name: 'webkit',
+            use: {
+                browserName: 'webkit',
+            },
+        },
+    ]
+    
 };
 
 export default config;
